@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사전등록 | SOUND WAVE FESTIVAL 2027</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/register.js" defer></script>
+</head>
+<body class="register-page">
+  <header class="site-header">
+    <a class="brand" href="index.html">SW<span>.</span></a>
+    <a class="header-ticket" href="index.html">홈으로 돌아가기 ↗</a>
+  </header>
+  <main class="register-main">
+    <div class="register-visual">
+      <img src="assets/sound-wave-hero.png" alt="SOUND WAVE 페스티벌 네온 도시 이미지">
+      <div><p>YOUR SUMMER STARTS HERE</p><h1>GET ON<br>THE WAVE.</h1><span>19—20 JUNE 2027 · SEOUL</span></div>
+    </div>
+    <section class="form-section">
+      <div class="section-kicker">SOUND WAVE FESTIVAL 2027 / PRE-REGISTRATION</div>
+      <h2>RESERVE<br><span>YOUR SPOT.</span></h2>
+      <p class="form-intro">아래 정보를 입력하고 사전등록을 완료해 주세요.<br>본 페이지는 수업 과제용으로 제작된 가상 신청 페이지입니다.</p>
+      <form id="ticketForm">
+        <label for="userName">이름 <em>*</em></label>
+        <input id="userName" name="userName" type="text" placeholder="이름을 입력해 주세요" required>
+
+        <label for="userEmail">이메일 <em>*</em></label>
+        <input id="userEmail" name="userEmail" type="email" placeholder="example@email.com" required>
+
+        <label for="userPhone">연락처 <em>*</em></label>
+        <input id="userPhone" name="userPhone" type="tel" placeholder="010-0000-0000" required>
+
+        <label for="ticketType">티켓 종류 <em>*</em></label>
+        <select id="ticketType" name="ticketType" required>
+          <option value="">티켓을 선택해 주세요</option>
+          <option value="1 DAY PASS / 55,000원">1 DAY PASS — 55,000원</option>
+          <option value="2 DAYS PASS / 89,000원">2 DAYS PASS — 89,000원</option>
+        </select>
+
+        <label for="ticketCount">신청 인원</label>
+        <select id="ticketCount" name="ticketCount">
+          <option>1명</option><option>2명</option><option>3명</option><option>4명</option>
+        </select>
+
+        <label class="check-row"><input type="checkbox" id="agree" required> 개인정보 수집 및 이용에 동의합니다. <em>*</em></label>
+        <button class="button button-lime submit-button" type="submit">사전등록 완료하기 <span>↗</span></button>
+      </form>
+      <div class="success-message" id="successMessage" role="status" aria-live="polite" hidden>
+        <span class="success-mark">✓</span><h3>YOU'RE ON THE LIST!</h3>
+        <p>사전등록 신청이 완료되었습니다.<br>입력하신 정보는 이 과제용 데모 화면에서만 사용됩니다.</p>
+        <a class="button button-dark" href="index.html">메인으로 돌아가기</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html">SW<span>.</span></a><span>© 2027 SOUND WAVE. CONCEPT PROJECT.</span></footer>
+</body>
+</html>
